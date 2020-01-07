@@ -10,7 +10,7 @@ return {
   default = {
     terminal = 'urxvt',
     rofi = rofi_command,
-    lock = 'i3lock-fancy',
+    lock = 'blurlock',
     quake = 'urxvt',
     screenshot = '~/.config/awesome/configuration/utils/screenshot -m',
     region_screenshot = '~/.config/awesome/configuration/utils/screenshot -r',
@@ -19,13 +19,13 @@ return {
     -- Editing these also edits the default program
     -- associated with each tag/workspace
     browser = 'google-chrome-stable',
-    term  = 'urxvt', -- gui text editor
+    term = 'urxvt',
     files = 'pcmanfm',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
     'compton --config ' .. filesystem.get_configuration_dir() .. '/configuration/compton.conf',
-    'nm-applet', -- wifi
+    'nm-applet', --wifi
     --'blueberry-tray', -- Bluetooth tray icon
     'xfce4-power-manager', -- Power manager
     'ibus-daemon --xim', -- Ibus daemon for keyboard
@@ -34,6 +34,9 @@ return {
     '/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     --KDE '/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     -- MATE'/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
+     --'flameshot',a
+     --'synology-drive -minimized',
+     --'google-chrome-stable', -- USe mozilla if have to
      'urxvt',
      'pamac-tray',
     -- Add applications that need to be killed between reloads

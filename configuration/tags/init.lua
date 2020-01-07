@@ -23,11 +23,11 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.roc,
+   icon = icons.lab,
     type = 'any',
     defaultApp = apps.default.rofi,
     screen = 1
-  }
+  },
 }
 
 awful.layout.layouts = {
