@@ -1,7 +1,7 @@
 ## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/)
 ### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
-Note: This fork focuses on streamlining the config and adding some Quality of Life touches to the theme.
+Note: This fork focuses on making my life easier
 
 An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
 
@@ -24,7 +24,6 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 - [Compton](https://github.com/tryone144/compton) for the compositor (blur and animations) Arch install: compton
 - [i3lock](https://github.com/meskarune/i3lock-fancy) the lockscreen application Arch Install: i3lock
 - [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard 
-- __gnome-keyring__ and a __policykit-agent__ (by default policykit-1-gnome is enabled)
 - (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme - Arch Install: materia-theme
 - (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme Arch Install: wget -qO- https://git.io/papirus-icon-theme-install | sh
 - (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
@@ -33,31 +32,13 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 ### 2) Clone the configuration
 
 ```
-git clone https://github.com/ChrisTitusTech/material-awesome.git ~/.config/awesome
+git clone https://github.com/blackroom24/material-awesome.git ~/.config/awesome
 ```
-
-> Awesome 4.3 is so new that most of the distributions have not updated it yet. If you want to install this config on Awesome 4.2 (current version on depo) use the specific awesome-4.2 branch (not in development by me)
-
-```
-git clone -b awesome-4.2 https://github.com/PapyElGringo/material-awesome.git ~/.config/awesome
-```
-
 ### 3) Set the themes
 Start **lxappearance** to active the **icon** theme and **GTK** theme
 Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
 
-### 4) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
-First install `qt5-style-plugins` (or `qt5-style-gtk2`) and add this to the bottom of your `/etc/environment`
-
-```bash
-XDG_CURRENT_DESKTOP=Unity
-QT_QPA_PLATFORMTHEME=gtk2
-```
-
-The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
-
-
-### 5) Read the documentation
+### 4) Read the documentation
 The documentation live within the source code.
 
 The project is split in functional directories and in each of them there is a readme where you can get additionnal informations about the them.
