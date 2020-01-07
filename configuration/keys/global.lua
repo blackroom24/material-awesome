@@ -36,7 +36,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey},
-    'r',
+    'x',
     function()
       _G.screen.primary.left_panel:toggle(true)
     end,
@@ -127,7 +127,7 @@ local globalKeys =
   -- Standard program
   awful.key(
     {modkey},
-    'x',
+    'Return',
     function()
       awful.spawn(apps.default.terminal)
     end,
