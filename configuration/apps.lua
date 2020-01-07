@@ -21,6 +21,7 @@ return {
     browser = 'google-chrome-stable',
     term = 'urxvt',
     files = 'pcmanfm',
+    editor = 'terminal -e vim',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
