@@ -23,7 +23,7 @@ local tags = {
     screen = 1
   },
   {
-    icon = icons.lab,
+    icon = icons.roc,
     type = 'any',
     defaultApp = apps.default.rofi,
     screen = 1
