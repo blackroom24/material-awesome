@@ -10,7 +10,7 @@ return {
   default = {
     terminal = 'urxvt',
     rofi = rofi_command,
-    lock = 'blurlock',
+    lock = 'i3lock-fancy',
     quake = 'urxvt',
     screenshot = '~/.config/awesome/configuration/utils/screenshot -m',
     region_screenshot = '~/.config/awesome/configuration/utils/screenshot -r',
