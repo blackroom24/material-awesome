@@ -18,7 +18,7 @@ return {
     
     -- Editing these also edits the default program
     -- associated with each tag/workspace
-    browser = 'google-chrome-stable',
+    browser = 'firefox',
     term = 'urxvt',
     files = 'pcmanfm',
     editor = 'terminal -e vim',
