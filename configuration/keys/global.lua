@@ -39,7 +39,7 @@ local globalKeys =
      'Left',
      function()
        awful.client.focus.byidx(-1)
-     end,
+    end,
      {description = 'focus previous by index', group = 'client'}
    ),
        awful.key(
@@ -53,7 +53,7 @@ local globalKeys =
 
   awful.key(
     {modkey},
-    'x',
+    'r',
     function()
       _G.screen.primary.left_panel:toggle(true)
     end,
@@ -144,7 +144,7 @@ local globalKeys =
   -- Standard program
   awful.key(
     {modkey},
-    'Return',
+    'x',
     function()
       awful.spawn(apps.default.terminal)
     end,
