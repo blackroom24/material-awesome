@@ -5,10 +5,10 @@ local apps = require('configuration.apps')
 
 local tags = {
   {
-    -- icon = icons.code,
-    -- type = 'code',
-    -- defaultApp = apps.default.editor,
-    -- screen = 1
+    icon = icons.code,
+    type = 'code',
+    defaultApp = apps.default.editor,
+    screen = 1
   },
   {
     icon = icons.brow,
