@@ -18,10 +18,10 @@ return {
     
     -- Editing these also edits the default program
     -- associated with each tag/workspace
-    browser = 'firefox',
-    term = 'urxvt',
+    browser = 'chromium',
+    term = 'kitty',
     files = 'pcmanfm',
-    editor = 'terminal -e vim',
+    editor = 'kitty -e vim',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
@@ -35,10 +35,7 @@ return {
     '/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     --KDE '/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     -- MATE'/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
-     --'flameshot',a
-     --'synology-drive -minimized',
-     --'google-chrome-stable', -- USe mozilla if have to
-     'pamac-tray',
+    'pamac-tray',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script
     '~/.config/awesome/configuration/awspawn' -- Spawn "dirty" apps that can linger between sessions
