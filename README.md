@@ -1,7 +1,7 @@
 ## Material and Mouse driven theme for [AwesomeWM 4.3](https://awesomewm.org/)
 ### Original work by PapyElGringo, official development seem to have moved to [material-shell](https://github.com/PapyElGringo/material-shell)
 
-Note: This fork focuses on making my life easier
+Note: This Fork is specific for my Workstation
 
 An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
 
@@ -22,7 +22,6 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 - [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Arch install: ttf-roboto
 - [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - Arch install: rofi
 - [Compton](https://github.com/tryone144/compton) for the compositor (blur and animations) Arch install: compton
-- [i3lock](https://github.com/meskarune/i3lock-fancy) the lockscreen application Arch Install: i3lock
 - [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard 
 - (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme - Arch Install: materia-theme
 - (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme Arch Install: wget -qO- https://git.io/papirus-icon-theme-install | sh
