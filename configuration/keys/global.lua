@@ -254,28 +254,7 @@ local globalKeys =
     end,
     {description = 'dropdown application', group = 'launcher'}
   ),
-  -- Widgets popups
-  --[[awful.key(
-    {altkey},
-    'h',
-    function()
-      if beautiful.fs then
-        beautiful.fs.show(7)
-      end
-    end,
-    {description = 'show filesystem', group = 'widgets'}
-  ),
-  awful.key(
-    {altkey},
-    'w',
-    function()
-      if beautiful.weather then
-        beautiful.weather.show(7)
-      end
-    end,
-    {description = 'show weather', group = 'widgets'}
-  ),--]]
-  -- Brightness
+ -- Brightness
   awful.key(
     {},
     'XF86MonBrightnessUp',
@@ -294,26 +273,26 @@ local globalKeys =
   ),
   -- ALSA volume control
   awful.key(
-    {},
+    {F3},
     'XF86AudioRaiseVolume',
     function()
-      awful.spawn('amixer -D pulse sset Master 5%+')
+      awful.spawn('amixer -c 0 set Master 5%+')
     end,
     {description = 'volume up', group = 'hotkeys'}
   ),
   awful.key(
-    {},
+    {F2},
     'XF86AudioLowerVolume',
     function()
-      awful.spawn('amixer -D pulse sset Master 5%-')
+      awful.spawn('amixer -c 0 set Master 5%-')
     end,
     {description = 'volume down', group = 'hotkeys'}
   ),
   awful.key(
-    {},
+    {F1},
     'XF86AudioMute',
     function()
-      awful.spawn('amixer -D pulse set Master 1+ toggle')
+      awful.spawn('amixer -c 0 set Master toggle')
     end,
     {description = 'toggle mute', group = 'hotkeys'}
   ),
