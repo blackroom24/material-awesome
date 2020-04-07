@@ -8,10 +8,10 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
     -- List of apps to start by default on some actions
     default = {
-        terminal = 'kitty',
+        terminal = 'st',
         rofi = rofi_command,
         lock = 'blurlock',
-        quake = 'kitty',
+        quake = 'st',
         screenshot = '~/.config/awesome/configuration/utils/screenshot -m',
         region_screenshot = '~/.config/awesome/configuration/utils/screenshot -r',
         delayed_screenshot = 'sleep 10 ; ~/.config/awesome/configuration/utils/screenshot -r',
@@ -19,13 +19,14 @@ return {
         -- Editing these also edits the default program
         -- associated with each tag/workspace
         browser = 'chromium',
-        term = 'kitty',
+        term = 'st',
         files = 'pcmanfm',
-        editor = 'kitty -e vim',
+        editor = 'st -e nvim',
     },
     -- List of apps to start once on start-up
     run_on_start_up = {
         'compton --config ' .. filesystem.get_configuration_dir() .. '/configuration/compton.conf',
+        'nitrogen --restore', -- Wallpaper settings
         'nm-applet', --wifi
         --'blueberry-tray', -- Bluetooth tray icon
         'xfce4-power-manager', -- Power manager
