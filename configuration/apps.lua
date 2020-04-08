@@ -8,7 +8,7 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
     -- List of apps to start by default on some actions
     default = {
-        terminal = 'st',
+        terminal = 'kitty',
         rofi = rofi_command,
         lock = 'betterlockscreen -l',
         quake = 'kitty',
@@ -19,9 +19,9 @@ return {
         -- Editing these also edits the default program
         -- associated with each tag/workspace
         browser = 'chromium',
-        term = 'st',
+        term = 'kitty',
         files = 'pcmanfm',
-        editor = 'st -e nvim',
+        editor = 'kitty -e nvim',
     },
     -- List of apps to start once on start-up
     run_on_start_up = {
