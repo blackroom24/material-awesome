@@ -40,7 +40,8 @@ end
 
 function suspend_command()
   exit_screen_hide()
-  awful.spawn.with_shell('sleep 1 && ' .. apps.default.lock .. ' & systemctl suspend')
+  -- awful.spawn.with_shell('sleep 1 && ' .. apps.default.lock .. ' & systemctl suspend')
+  awful.spawn.with_shell('betterlockscreen -s')
 end
 function exit_command()
   _G.awesome.quit()
