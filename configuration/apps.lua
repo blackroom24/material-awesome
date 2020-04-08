@@ -10,8 +10,8 @@ return {
     default = {
         terminal = 'st',
         rofi = rofi_command,
-        lock = 'blurlock',
-        quake = 'st',
+        lock = 'betterlockscreen -l',
+        quake = 'kitty',
         screenshot = '~/.config/awesome/configuration/utils/screenshot -m',
         region_screenshot = '~/.config/awesome/configuration/utils/screenshot -r',
         delayed_screenshot = 'sleep 10 ; ~/.config/awesome/configuration/utils/screenshot -r',
