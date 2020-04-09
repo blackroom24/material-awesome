@@ -20,6 +20,8 @@ return {
         -- associated with each tag/workspace
         browser = 'chromium',
         term = 'kitty',
+        doc = 'zeal',
+        studio = 'android_studio',
         files = 'pcmanfm',
         editor = 'kitty -e nvim',
     },

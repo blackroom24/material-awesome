@@ -16,7 +16,18 @@ local tags = {
     defaultApp = apps.default.browser,
     screen = 1
   },
-
+  {
+    icon = icons.studio,
+    type = 'studio',
+    defaultApp = apps.default.studio,
+    screen = 1
+  },
+  {
+    icon = icons.doc,
+    type = 'doc',
+    defaultApp = apps.default.doc,
+    screen = 1
+  },
   {
     icon = icons.folder,
     type = 'files',
