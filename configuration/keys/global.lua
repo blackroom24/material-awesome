@@ -36,7 +36,7 @@ awful.util.table.join(
         ),
     awful.key(
         {modkey},
-        'l',
+        'h',
         function()
             awful.client.focus.byidx(-1)
         end,
@@ -44,7 +44,7 @@ awful.util.table.join(
         ),
     awful.key(
         {modkey},
-        'h',
+        'l',
         function()
             awful.client.focus.byidx(1)
         end,
