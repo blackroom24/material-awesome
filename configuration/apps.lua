@@ -29,12 +29,13 @@ return {
     run_on_start_up = {
         'compton --config ' .. filesystem.get_configuration_dir() .. '/configuration/compton.conf',
         'nitrogen --restore', -- Wallpaper settings
+        'unclutter',
         'nm-applet', --wifi
         --'blueberry-tray', -- Bluetooth tray icon
         'xfce4-power-manager', -- Power manager
-        'ibus-daemon --xim', -- Ibus daemon for keyboard
-        'scream -u -p 4011 -i virbr1', -- scream audio sink
-        'numlockx on', -- enable numlock
+        -- 'ibus-daemon --xim', -- Ibus daemon for keyboard
+        -- 'scream -u -p 4011 -i virbr1', -- scream audio sink
+        -- 'numlockx on', -- enable numlock
         '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
         'pamac-tray',
         -- Add applications that need to be killed between reloads
