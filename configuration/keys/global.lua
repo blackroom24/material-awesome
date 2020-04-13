@@ -36,7 +36,7 @@ awful.util.table.join(
         ),
     awful.key(
         {modkey},
-        'h',
+        'j',
         function()
             awful.client.focus.byidx(-1)
         end,
@@ -44,7 +44,7 @@ awful.util.table.join(
         ),
     awful.key(
         {modkey},
-        'l',
+        'k',
         function()
             awful.client.focus.byidx(1)
         end,
@@ -322,7 +322,7 @@ awful.util.table.join(
         {modkey},
         'm',
         function()
-            awful.util.spawn_with_shell('kitty -e htop')
+            awful.util.spawn_with_shell('st-e htop')
         end,
         {description = 'Shows System process', group = 'launcher'}
         ),
